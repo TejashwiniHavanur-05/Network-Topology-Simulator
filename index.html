@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Network Topology Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1> Network Topology Simulator</h1>
+
+</header>
+
+<div class="toolbar">
+
+<h3>Devices</h3>
+
+<button class="pc" onclick="addDevice('pc')">PC</button>
+<button class="router" onclick="addDevice('router')">Router</button>
+<button class="switch" onclick="addDevice('switch')">Switch</button>
+
+<h3>Topology</h3>
+
+<button onclick="generateStar()">Star</button>
+<button onclick="generateBus()">Bus</button>
+<button onclick="generateRing()">Ring</button>
+<button onclick="generateMesh()">Mesh</button>
+
+<h3>Simulation</h3>
+
+<button class="packet" onclick="sendPacket()">Send Packet</button>
+<button class="reset" onclick="resetNetwork()">Reset</button>
+
+</div>
+
+<div class="canvas-area">
+<canvas id="canvas" width="1100" height="600"></canvas>
+</div>
+
+<footer>
+<p>Interactive Network Visualization Simulator</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
